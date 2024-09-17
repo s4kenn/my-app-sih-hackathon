@@ -1,8 +1,5 @@
 "use-client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { Element } from "react-scroll";
 import { BackgroundLinesDemo } from "./background-lines-snippet";
 import { GlobeDemo } from "./globe-snippet";
 import { TypewriterEffectSmoothDemo } from "./type-writter-snippet";

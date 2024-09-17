@@ -1,15 +1,5 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import {
-  PiAppStoreLogo,
-  PiChat,
-  PiDatabase,
-  PiGraph,
-  PiHeadsetFill,
-  PiLock,
-  PiMegaphone,
-  PiMonitor,
-  PiStorefront,
-} from "react-icons/pi";
+import { PiGraph, PiHeadsetFill, PiLock } from "react-icons/pi";
 
 export function CardHoverEffectDemo() {
   return (
