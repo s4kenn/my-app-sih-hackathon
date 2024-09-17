@@ -1,7 +1,24 @@
 "use client";
 import React from "react";
-import { ContainerScroll } from "@/components/ui/container-scroll-animation";
-import Image from "next/image";
+
+// Define types for ContainerScroll props
+interface ContainerScrollProps {
+  titleComponent: React.ReactNode;
+  children: React.ReactNode;
+}
+
+// Define ContainerScroll component with TypeScript
+export function ContainerScroll({
+  titleComponent,
+  children,
+}: ContainerScrollProps) {
+  return (
+    <div>
+      <div>{titleComponent}</div>
+      <div>{children}</div>
+    </div>
+  );
+}
 
 export function HeroScrollDemo() {
   return (
@@ -19,14 +36,15 @@ export function HeroScrollDemo() {
         }
       >
         <video
-          src={
-            "https://github.blog/wp-content/uploads/2020/12/graceful-degredation.h264.mp4#t=0.001"
-          }
+          src="https://github.blog/wp-content/uploads/2020/12/graceful-degredation.h264.mp4#t=0.001"
           height={720}
           width={1400}
           className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          autoPlay
           loop
-          draggable={false}
+          muted
+          playsInline
+          // Removed draggable prop as it's not a valid attribute for video
         />
       </ContainerScroll>
     </div>
