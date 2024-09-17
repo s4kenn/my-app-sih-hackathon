@@ -20,6 +20,7 @@ export function ContainerScroll({
   );
 }
 
+// Define the HeroScrollDemo component
 export function HeroScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden">
@@ -44,7 +45,6 @@ export function HeroScrollDemo() {
           loop
           muted
           playsInline
-          // Removed draggable prop as it's not a valid attribute for video
         />
       </ContainerScroll>
     </div>
