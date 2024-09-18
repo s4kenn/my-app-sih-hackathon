@@ -1,5 +1,6 @@
 "use client";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import Link from 'next/link';
 export function TypewriterEffectSmoothDemo() {
   const words = [
     {
@@ -28,7 +29,7 @@ export function TypewriterEffectSmoothDemo() {
           Go to ChatMedica
         </button>
         <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-          Get your report
+      <Link href="https://brain-tumor-chatmedica.streamlit.app/">    Get your report </Link>
         </button>
       </div>
     </div>
